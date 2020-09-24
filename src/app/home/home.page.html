@@ -1,20 +1,115 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      <strong>Hi, Sir<br> Where do you go?</strong>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!--search bar-->
+  <ion-searchbar search-icon = "location-outline" placeholder="input destination"></ion-searchbar>
+  <!--end search bar-->
+    
+  <ion-grid>
+  <!--row-->
+  <ion-row class="ion-align-items-center">
+    <ion-col size ="auto">
+        <ion-title>Daily Scenary</ion-title>
+    </ion-col>
+    <ion-col size = "auto"><a href ="#" style="text-decoration:none"> <small>update</small></a></ion-col>
+  </ion-row>
+  
+  <!--end row-->
+  </ion-grid>
+
+  <!--Card-->
+  <ion-card>
+
+    <!-- grid-->
+      <ion-grid>
+           
+          <img src="https://blog.emania.com.br/wp-content/uploads/2017/02/2-2.jpg" alt="imagem paisagem 1">
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-text> <small>07.08.2020</small> </ion-text>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="7">
+                <ion-text>
+                  <p><strong>Santa Barbara, United States</strong></p>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="5">
+                <ion-item>
+                  <ion-avatar>
+                    <img src="https://randomuser.me/api/portraits/women/22.jpg">
+                  </ion-avatar>
+                  <ion-avatar>
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg">
+                  </ion-avatar>
+                </ion-item>
+              </ion-col>
+
+            </ion-row>
+
+      </ion-grid>
+      <!--end grid-->
+
+  </ion-card>
+  <!--end card-->
+
+
+  <!-- parte 2 card - Analisar código e revisar-->
+
+  <ion-card>
+
+  <!-- grid-->
+    <ion-grid>
+         
+        <img src="https://blog.emania.com.br/wp-content/uploads/2017/04/2-2.jpg" alt="imagem paisagem 1">
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-text> <small>07.08.2020</small> </ion-text>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="7">
+              <ion-text>
+                <p><strong>Santa Barbara, United States</strong></p>
+              </ion-text>
+            </ion-col>
+
+            <ion-col size="5">
+              <ion-item>
+                <ion-avatar>
+                  <img src="https://randomuser.me/api/portraits/women/22.jpg">
+                </ion-avatar>
+                <ion-avatar>
+                  <img src="https://randomuser.me/api/portraits/men/22.jpg">
+                </ion-avatar>
+              </ion-item>
+            </ion-col>
+
+          </ion-row>
+
+    </ion-grid>
+    <!--end grid-->
+
+</ion-card>
+<!--end card-->
+
+
+
+
+
 </ion-content>
